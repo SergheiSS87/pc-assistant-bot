@@ -32,22 +32,15 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
 async def help_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
     await update.message.reply_text(
-        "/start — перезапуск бота
-"
-        "/help — справка
-"
-        "/about — информация о боте
-
-"
-        "Можешь также выбрать готовую тему из меню или задать свой вопрос вручную."
-    )
+        "/start — перезапуск бота"
+        "/help — справка"
+        "/about — информация о боте"
+        "Можешь также выбрать готовую тему из меню или задать свой вопрос вручную.")
 
 async def about_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
     await update.message.reply_text(
-        "Я Telegram-бот, использующий ИИ ChatGPT, чтобы помогать с настройкой, диагностикой и обслуживанием компьютеров.
-"
-        "Создан ИТ-специалистом для таких же ИТ-специалистов и пользователей ПК."
-    )
+        "Я Telegram-бот, использующий ИИ ChatGPT, чтобы помогать с настройкой, диагностикой и обслуживанием компьютеров."
+        "Создан ИТ-специалистом для таких же ИТ-специалистов и пользователей ПК.")
 
 async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
     user_input = update.message.text
