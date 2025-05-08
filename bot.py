@@ -25,9 +25,7 @@ main_menu = ReplyKeyboardMarkup(
 
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     await update.message.reply_text(
-        "Привет! Я GPT-бот, который поможет тебе с ремонтом и настройкой ПК.
-
-"
+        "Привет! Я GPT-бот, который поможет тебе с ремонтом и настройкой ПК"
         "Выбери опцию из меню или задай свой вопрос.",
         reply_markup=main_menu
     )
