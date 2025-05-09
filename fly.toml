@@ -1,0 +1,16 @@
+app = "neohelp-bot"
+
+[env]
+  PYTHONUNBUFFERED = "1"
+
+[build]
+  image = "python:3.11-slim"
+
+[experimental]
+  auto_rollback = true
+
+[deploy]
+  release_command = "echo Release command executed"
+
+[processes]
+  app = "python bot.py"
